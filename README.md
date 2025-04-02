@@ -31,7 +31,7 @@ La base de datos está diseñada para manejar toda la información relacionada c
 - */funciones*: Contiene las funciones utilizados en el sistema.
 - [DQL Select](dql_funciones.sql): Funciones
 
-```
+
 
 ## Ejemplos de Consultas
 
