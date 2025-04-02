@@ -13,71 +13,25 @@ La base de datos está diseñada para manejar toda la información relacionada c
 - Control de asistencia
 - Sistema de notificaciones
 
-## Requisitos del Sistema
-
-- MySQL 8.0 o superior
-- MySQL Workbench 8.0 o superior
-- Cliente MySQL (mysql-cli)
-- Sistema operativo compatible con MySQL (Windows, Linux, macOS)
-
-## Instalación y Configuración
-
-### 1. Configuración del Entorno
-
-```bash
-# Instalar MySQL (Ubuntu/Debian)
-sudo apt-get update
-sudo apt-get install mysql-server
-
-# Instalar MySQL (Windows)
-# Descargar e instalar MySQL Installer desde la página oficial
-```
-
-### 2. Carga de la Base de Datos
-
-```bash
-# Crear la base de datos y cargar la estructura
-mysql -u root -p < ddl.sql
-
-# Cargar datos iniciales
-mysql -u root -p campuslands_db < dml.sql
-```
-
-### 3. Ejecución de Scripts
-
-```bash
-# Para ejecutar consultas
-mysql -u root -p campuslands_db -e "SELECT * FROM camper;"
-
-# Para ejecutar procedimientos almacenados
-mysql -u root -p campuslands_db -e "CALL nombre_procedimiento();"
-
-# Para ejecutar funciones
-mysql -u root -p campuslands_db -e "SELECT nombre_funcion();"
 ```
 
 ## Estructura de la Base de Datos
 
-### Tablas Principales
-
-1. **campusland**: Almacena información de los campus
-2. **camper**: Información de los estudiantes
-3. **entrenador**: Datos de los entrenadores
-4. **ruta_entrenamiento**: Rutas de aprendizaje disponibles
-5. **modulo**: Módulos de cada ruta
-6. **evaluacion**: Registro de evaluaciones
-7. **inscripcion**: Control de inscripciones
-8. **grupo_campers**: Grupos de estudiantes
-9. **asistencia**: Control de asistencia
-10. **notificacion**: Sistema de notificaciones
-
-### Relaciones Principales
-
-- Un camper pertenece a un campus y tiene un estado
-- Un camper se inscribe en una ruta
-- Un entrenador puede estar asignado a múltiples rutas
-- Un módulo pertenece a una ruta y tiene múltiples evaluaciones
-- Un grupo tiene múltiples campers y un entrenador asignado
+- */diagrama*: Contiene el diagrama.
+- [DQL Select](DiagramaDBCampus.jpeg): Diagrama
+- */tablas*: Contiene las tablas de la base de datos.
+- [DQL Select](ddl.sql): Tablas
+- */inserts*: Contiene los scripts de inserción de datos iniciales.
+- [DQL Select](dml.sql): Insert
+- */consultas*: Contiene las consultas SQL utilizadas en el proyecto.
+- [DQL Select](dql_select.sql): Consultas de selección de datos.
+- [DQL Select](dql_select_advance.sql): Consultas de selección de datos.
+- */triggers*: Contiene los triggers SQL para la gestión de eventos en la base de datos.
+- [DQL Select](dql.triggers.sql): Triggers
+- */procedimientos*: Contiene los procedimientos almacenados utilizados en el sistema.
+- [DQL Select](dql_procedimientos.sql): Procedimientos
+- */funciones*: Contiene las funciones utilizados en el sistema.
+- [DQL Select](dql_funciones.sql): Funciones
 
 ## Ejemplos de Consultas
 
@@ -218,7 +172,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - **Nombre**: Juan Pablo Pinilla Guzman
 - **Grupo**: J1
 - **Materia**: MySQLll
-- **Email**: [Tu correo electrónico]
-- **GitHub**: [Tu perfil de GitHub]
+- **Email**: juanpablopiinilla@gmail.com
+- **GitHub**: JuanPabloPinillaGuzman
 
 Para cualquier pregunta o problema con la implementación, por favor contactar al desarrollador a través de los medios mencionados anteriormente.
