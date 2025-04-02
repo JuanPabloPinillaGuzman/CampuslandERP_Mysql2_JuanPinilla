@@ -163,11 +163,6 @@ Este proyecto fue desarrollado por:
   - Creación de triggers y eventos
   - Documentación del proyecto
 
-## Licencia y Contacto
-
-### Licencia
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
 ### Contacto
 - **Nombre**: Juan Pablo Pinilla Guzman
 - **Grupo**: J1
@@ -175,4 +170,3 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - **Email**: juanpablopiinilla@gmail.com
 - **GitHub**: JuanPabloPinillaGuzman
 
-Para cualquier pregunta o problema con la implementación, por favor contactar al desarrollador a través de los medios mencionados anteriormente.
